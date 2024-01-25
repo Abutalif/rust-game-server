@@ -1,24 +1,22 @@
-// TODO: choose between document and window.
 import Game from "./src/Game.js"
-import MainMenu from "./src/MainMenu.js"
 
-
-document.addEventListener('DOMContentLoaded', function () {
-    const canvas = document.getElementById('gameCanvas');
+window.addEventListener('load', function () {
+    const canvas = this.document.getElementById('gameCanvas');
     const context = canvas.getContext('2d');
+    canvas.width = window.innerWidth;
+    canvas.height = window.innerHeight;
+
+    const game = new Game(canvas.width, canvas.height);
+    let lastTime = 0;
     
-    const main_menu = new MainMenu();
-    const game = new Game(context);
-    const lastTime = 0;
-    main_menu.start()
+    animate(0);
+
     function animate(timeStamp) {
         const deltaTime = timeStamp - lastTime;
         lastTime = timeStamp;
-        context.clearRect(0,0, canvas.width, canvas.hight);
-        game.draw();
+        context.clearRect(0,0, canvas.width, canvas.height); // might delete only updated elements.
+        game.draw(context);
         game.update(deltaTime);
-        requestAnimationFrame(animate)
+        window.requestAnimationFrame(animate)
     };
-
-    animate(0);
 });

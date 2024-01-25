@@ -33,12 +33,6 @@ document.addEventListener('DOMContentLoaded', function () {
     // Flag to track if the close button is currently pressed
     let isCloseButtonPressed = false;
 
-    function setCanvasSize() {
-        // Set canvas size to match window dimensions
-        canvas.width = window.innerWidth;
-        canvas.height = window.innerHeight;
-    }
-
     function loadAssets() {
         // Load images asynchronously
         return Promise.all([

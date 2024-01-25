@@ -1,0 +1,21 @@
+Frontend.
+1. Forget about main menu for now. We will come back for it later. [DONE]
+2. Add games main components:
+    1. Add player. [DONE]
+    2. Add map. [DONE]
+    3. Add key handling. [DONE]
+3. Player:
+    1. Add movement with key handling. [DONE]
+    2. 
+4. Map:
+    1. Add textures. [DONE]
+    2. Rescale texture to make a pattern with a smaller image.
+    3. Add screen movement with focus on player.
+5. Add websocket logic.
+    1. Set up connection.
+
+Backend.
+1. Serve files. [DONE]
+
+Organization.
+1. Edit README.md.
