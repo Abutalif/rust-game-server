@@ -4,15 +4,32 @@ Frontend.
     1. Add player. [DONE]
     2. Add map. [DONE]
     3. Add key handling. [DONE]
+    4. Add enemies.
+    5. Set up WebSockets.
+    6. Add win/lose condition.
+    7. Add spawning location.
 3. Player:
     1. Add movement with key handling. [DONE]
-    2. 
+    2. Handle attack.
+    3. Add animation.
+    4. Set health (one hit).
+    5. Maybe: respawn.
+    6. Get textures.
 4. Map:
     1. Add textures. [DONE]
     2. Rescale texture to make a pattern with a smaller image.
     3. Add screen movement with focus on player.
-5. Add websocket logic.
+    4. Draw map with Tiled: https://www.mapeditor.org/
+5. WebSocket:
     1. Set up connection.
+    2. Choose what to send between client and server.
+6. Collision:
+    1. Make a new class.
+    2. Handle collision logic.
+7. Enemies:
+    1. Set up spawning.
+8. Actor class:
+    1. Set common logic for actors.
 
 Backend.
 1. Serve files. [DONE]
