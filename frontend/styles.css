@@ -4,6 +4,6 @@
     overflow:hidden;
 }
 
-#background {
+#grass_tiles, #stone_tiles {
     display: none;
 }

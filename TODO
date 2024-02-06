@@ -8,6 +8,7 @@ Frontend.
     5. Set up WebSockets.
     6. Add win/lose condition.
     7. Add spawning location.
+    8. Event listener on window resize to match game width and hight. 
 3. Player:
     1. Add movement with key handling. [DONE]
     2. Handle attack.
@@ -30,6 +31,7 @@ Frontend.
     1. Set up spawning.
 8. Actor class:
     1. Set common logic for actors.
+9. Main menu
 
 Backend.
 1. Serve files. [DONE]
