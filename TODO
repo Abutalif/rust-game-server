@@ -1,26 +1,25 @@
 Frontend.
-1. Forget about main menu for now. We will come back for it later. [DONE]
+1. [DONE] Forget about main menu for now. We will come back for it later.
 2. Add games main components:
-    1. Add player. [DONE]
-    2. Add map. [DONE]
-    3. Add key handling. [DONE]
+    1. [DONE] Add player.
+    2. [DONE] Add map.
+    3. [DONE] Add key handling.
     4. Add enemies.
     5. Set up WebSockets.
     6. Add win/lose condition.
     7. Add spawning location.
     8. Event listener on window resize to match game width and hight. 
 3. Player:
-    1. Add movement with key handling. [DONE]
-    2. Handle attack.
-    3. Add animation.
-    4. Set health (one hit).
-    5. Maybe: respawn.
-    6. Get textures.
+    1. [DONE] Add movement with key handling.
+    2. [DONE] Add animation.
+    3. [DONE] Set health (one hit).
+    4. [DONE] Get textures.
+    5. Add sprinting.
 4. Map:
-    1. Add textures. [DONE]
-    2. Rescale texture to make a pattern with a smaller image.
-    3. Add screen movement with focus on player.
-    4. Draw map with Tiled: https://www.mapeditor.org/
+    1. [DONE] Add textures.
+    2. [DONE] Rescale texture to make a pattern with a smaller image.
+    3. [DONE] Add screen movement with focus on player.
+    4. Add solid tiles.
 5. WebSocket:
     1. Set up connection.
     2. Choose what to send between client and server.
@@ -30,11 +29,19 @@ Frontend.
 7. Enemies:
     1. Set up spawning.
 8. Actor class:
-    1. Set common logic for actors.
+    1. [DONE] Set common logic for actors.
+    2. [DONE] Cut animation frame with offset.
+    3. [DONE] Time sprite fps.
+    4. [DONE] Add attack animation.
+    5. Add attack logic.
 9. Main menu
 
+
+
+
+
 Backend.
-1. Serve files. [DONE]
+1. [DONE] Serve files.
 
 Organization.
 1. Edit README.md.

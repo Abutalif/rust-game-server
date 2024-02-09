@@ -9,7 +9,6 @@ export default class Map {
         this.stones = document.getElementById("stone_tiles");
         this.layer1 = [[]]
         this.initLayers()
-        console.log(this.layer1)
     };
 
     initLayers() {

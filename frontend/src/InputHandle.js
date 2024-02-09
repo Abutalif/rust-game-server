@@ -14,7 +14,7 @@ export default class InputHandle {
             if (((e.key === 'ArrowRight') || (e.key === 'D')|| (e.key === 'd')) && this.game.keys.indexOf('MoveRight') === -1) {
                 this.game.keys.push('MoveRight');
             }
-            if (((e.key === 'Space')) && this.game.keys.indexOf('Attack') === -1) {
+            if (((e.key === ' ')) && this.game.keys.indexOf('Attack') === -1) {
                 this.game.keys.push('Attack');
             }
         })
@@ -32,7 +32,7 @@ export default class InputHandle {
             if (((e.key === 'ArrowRight') || (e.key === 'D')|| (e.key === 'd')) && this.game.keys.indexOf('MoveRight') > -1) {
                 this.game.keys.splice(this.game.keys.indexOf('MoveRight'), 1);
             }
-            if (((e.key === 'Space')) && this.game.keys.indexOf('Attack') === -1) {
+            if (((e.key === ' ')) && this.game.keys.indexOf('Attack') > -1) {
                 this.game.keys.splice(this.game.keys.indexOf('Attack'), 1);
             }
         });

@@ -4,6 +4,6 @@
     overflow:hidden;
 }
 
-#grass_tiles, #stone_tiles {
+#grass_tiles, #stone_tiles, #warrior_1 {
     display: none;
 }
