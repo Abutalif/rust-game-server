@@ -2,6 +2,7 @@ import Player from "./Entities/Player.js"
 import Map from "./Map.js"
 import InputHandle from "./InputHandle.js"
 import Camera from "./Camera.js"
+import Enemy from "./Entities/Enemy.js";
 
 
 export default class Game {
@@ -12,6 +13,7 @@ export default class Game {
         this.keys = [];
         this.inputHandle = new InputHandle(this);
         this.player = new Player(this, this.texture_id);
+        this.enemies = this.initEnemies()
         this.map = new Map();
         this.camera = new Camera(this.map, screenWidth, screenHeight);
         this.camera.follow(this.player)
@@ -20,9 +22,27 @@ export default class Game {
     update(deltaTime) {
         this.camera.update();
         this.player.update(deltaTime);
+        this.enemies.forEach(enemy => {
+            enemy.update(deltaTime);
+        })
     };
     draw(context) {
         this.map.draw(context, this.camera);
         this.player.draw(context);
+        this.enemies.forEach(enemy => {
+            enemy.draw(context);
+        })
     };
+    initEnemies() {
+        const enemy1 = new Enemy(this, this.texture_id);
+        enemy1.x = this.width - enemy1.width;
+        enemy1.y = 0
+        const enemy2 = new Enemy(this, this.texture_id)
+        enemy2.x = 0;
+        enemy2.y = this.height - enemy2.height;
+        const enemy3 = new Enemy(this, this.texture_id)
+        enemy3.x = this.width - enemy3.width;
+        enemy3.y = this.height - enemy3.height;
+        return [enemy1, enemy2, enemy3];
+    }
 };
